@@ -8,6 +8,7 @@ nodelist = []
 dupenodelist = []
 
 for line in f.readlines():
+    latestline = line # so as to separate iterator from variable - clearer?
     if latestline in nodelist:
         print "duplicate - adding to dupenodelist"
         dupenodelist.append(latestline)
